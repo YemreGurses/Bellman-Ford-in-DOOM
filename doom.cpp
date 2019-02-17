@@ -58,7 +58,7 @@ vector<PathwithDistance> pathes;
 
 
 void readInput(){
-	ifstream in("the3.inp");
+	ifstream in("input.inp");
 
 	string str;
  	int i = 0;
@@ -396,7 +396,7 @@ int main()
 		PathwithDistance path = {final_cost[shortest_index], final_path, 1, bos};
 
 		
-		ofstream outfile ("the3.out");
+		ofstream outfile ("output.out");
 
 		outfile << ammo - path.path_cost << endl;
 		outfile << path.path.size() << endl;
@@ -702,7 +702,7 @@ int main()
 			}
 		}
 
-		ofstream outfile ("the3.out");
+		ofstream outfile ("output.out");
 		
 		outfile << ammo - leastcostpathes[outputpath].path_cost << endl;
 		outfile << leastcostpathes[outputpath].path.size() << endl;

@@ -1,2 +1,2 @@
 all:
-	g++ the3.cpp -o main -g -std=c++11
+	g++ doom.cpp -o main -g -std=c++11
